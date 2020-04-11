@@ -2,16 +2,18 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Album example · Bootstrap</title>
+    <title>Ravi Kishore</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
     <!-- Bootstrap core CSS -->
+}
 <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
@@ -47,15 +49,15 @@
   <body>
  <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Ravi Kishore</a>
+	  <a class="navbar-brand" href="{% url 'home' %}">Ravi Kishore</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <div class="navbar-nav ml-auto">
-	      <a class="nav-item nav-link" href="#">Twitter</a>
-	      <a class="nav-item nav-link" href="#">Resume</a>
-	      <a class="nav-item nav-link" href="#">Blog</a>
+	      <a class="nav-item nav-link" href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">LinkedIn</a>
+	      <a class="nav-item nav-link" href="{% static 'Ravi Kishore\'s Resume.pdf' %}">Resume</a>
+	      <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
 	    </div>
 	  </div>
 	</nav>
@@ -70,17 +72,20 @@
       <p>
         <a href="mailto:ravikishorespace@gmail.com" class="btn btn-primary my-2">Email Me</a>
       </p>
+      <img class="img-fluid" height="200" width="200" src="{% static 'Thor_Ravi.jpg' %}"/></img>
     </div>
   </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
-
+      <h3>Experience</h3>
+        <br/>
+        <br/>
       <div class="row">
       	{% for job in jobs.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="{{ job.image.url }}"/></img>
+            <a href="{{ job.image.url }}" target="blank"><img class="img-fluid" src="{{ job.image.url }}"/></img></a>
             <div class="card-body">
               <p class="card-text">{{ job.summary }}</p>
             </div>
