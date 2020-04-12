@@ -2,12 +2,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Ravi Kishore</title>
+    <title>Ravi's Blog</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -72,7 +73,7 @@
       <a href="{% url 'detail' blog.id %}"><h4>{{ blog.title }}</h4></a>
       {{ blog.pub_date_pretty }}
       <br/>
-      <a href="{{ blog.image.url }}" target="blank"><img class="img-fluid" src="{{ blog.image.url }}"/></img></a>
+      <a href="{{ blog.image.url }}" target="blank"><img class="img-fluid" height="200" width="200" src="{{ blog.image.url }}"/></img></a>
       <br/>
       <b>{{ blog.body_pretty }}</b>
       <br/>
