@@ -133,6 +133,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #folder to be created with name med
 MEDIA_URL = '/media/' #url path to fetch those files from media folder. (can be any name)
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
