@@ -33,6 +33,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     
   </head>
 <body>
@@ -61,13 +62,13 @@
     </div>
   </section>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark off sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark off sticky-top" id="SubNav">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
       <div class="navbar-nav mx-auto">
-        <a class="nav-item nav-link" href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">Experience</a>
+        <a class="nav-item nav-link" href="#SubNav" onclick="displayExperiencePanel()">Experience</a>
         <a class="nav-item nav-link" href="{% static 'Ravi Kishore\'s Resume.pdf' %}">Education</a>
         <a class="nav-item nav-link" href="{% url 'contact' %}">Skills</a>
         <a class="nav-item nav-link" href="{% url 'contact' %}">Certifications</a>
@@ -76,7 +77,7 @@
     </div>
   </nav>
 
-    <div class="album py-5 bg-light">
+    <div class="album py-5 bg-light" id="ExperiencePanel">
       <div class="container">
         <h3>Experience</h3>
           <br/>
@@ -127,10 +128,29 @@
   <br/>
   <br/>
   <br/>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            //scrollTop: $(hash).offset().top,
+            scrollTop: '500px'
+          }, 500, function(){
+            //window.location.hash = hash;
+          });
+        }
+      });
+    });
+
+    function displayExperiencePanel() {
+      document.getElementById("ExperiencePanel").style.display = "block";
+    }
+</script>
 </body>
 
 <footer class="text-muted">

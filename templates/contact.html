@@ -30,6 +30,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -52,33 +53,67 @@
     <div class="container">
       <h3>Get in Touch</h3>
       <br/>
-      Icons
+        <table class="table">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
+                    <i class="fas fa-phone-alt"></i>
+                  </a>
+                </div>
+              </td>
+              <td>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </td>
+              <td>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </td>
+              <td>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </td>
+              <td>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
     </div>
   </section>
 
-  <ul class="social list-inline">
-    <li><a href="https://www.linkedin.com/in/mehul-kothari-765868126/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-    <li><a href="https://twitter.com/MehulKo18943279"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-    <li><a href="https://github.com/mehulk05"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
-  </ul>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: #e9ecef !important">
-    <div class="my-1 p-1">
+<div class="row d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 text-center"> 
+  <div class="col-sm-5 bg-light mr-md-5 ml-md-5 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: #e9ecef !important;">
+    <div class="my-1 py-1">
       <h4 class="display-5">Location of Residence</h4>
       <b class="lead">Hosur</b>
     </div>
-    <div class="mx-auto" style="width: 625px; height: 500px; border-radius: 0 0 0 0;">
+    <div class="mx-auto" style="width: 100%; height: 500px; border-radius: 0 0 0 0;">
       <iframe width="100%" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoyj3g8hwrjsRvslaJ8BrGtc&key=AIzaSyBPNbIWNMwVmkxHAbCisYx0c1JRtTACZ_s" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: #e9ecef !important">
+  <div class="col-sm-5 bg-light mr-md-5 ml-md-5 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: #e9ecef !important;">
     <div class="my-1 py-1">
       <h4 class="display-5">Location of Work</h4>
       <b class="lead">Manyata Tech Park, Bangalore</b>
     </div>
-    <div class="mx-auto" style="width: 625px; height: 500px; border-radius: 0 0 0 0;">
+    <div class="mx-auto" style="width: 100%; height: 500px; border-radius: 0 0 0 0;">
       <iframe width="100%" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6rqtWUXrjsRjZ5I8d4KCH4&key=AIzaSyBPNbIWNMwVmkxHAbCisYx0c1JRtTACZ_s" allowfullscreen></iframe>
     </div>
   </div>
@@ -93,5 +128,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1bfa1b7c0f.js" crossorigin="anonymous"></script>
 </body>
 </html>
