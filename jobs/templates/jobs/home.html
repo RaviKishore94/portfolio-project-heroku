@@ -27,14 +27,17 @@
           font-size: 3.5rem;
         }
       }
+      body {
+        padding-top: 0 !important;
+      }
     </style>
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="/static/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
   </head>
-  <body>
- <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="{% url 'home' %}">Ravi Kishore</a>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark off sticky-top">
+	  <a class="navbar-brand" href="{% url 'home' %}">Ravi Kishore K P</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -42,54 +45,97 @@
 	    <div class="navbar-nav ml-auto">
 	      <a class="nav-item nav-link" href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">LinkedIn</a>
 	      <a class="nav-item nav-link" href="{% static 'Ravi Kishore\'s Resume.pdf' %}">Resume</a>
-	      <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
+        <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Me</a>
 	    </div>
 	  </div>
 	</nav>
-</header>
 
-<main role="main">
-
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center" style="margin-bottom: 0">
     <div class="container">
       <h1>Hi, I'm Ravi.</h1>
-      <p class="lead text-muted">Hey, my name is Ravi kishore and I love Marvel.</p>
+        <img class="img-fluid border border-dark rounded-circle" alt="200x200" height="200" width="200" src="{% static 'Ravi_Kishore.jpg' %}"/></img>
       <p>
-        <a href="mailto:ravikishorespace@gmail.com" class="btn btn-primary my-2">Email Me</a>
+        <b><p class="lead text-muted">I am a Full Stack Developer with 3+ years of Experience</p></b>
       </p>
-      <img class="img-fluid" height="200" width="200" src="{% static 'Thor_Ravi.jpg' %}"/></img>
+        <a href="mailto:ravikishorespace@gmail.com" class="btn btn-primary my-2">Email Me</a>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <h3>Experience</h3>
-        <br/>
-        <br/>
-      <div class="row">
-      	{% for job in jobs.all %}
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <a href="{{ job.image.url }}" target="blank"><img class="img-fluid" src="{{ job.image.url }}"/></img></a>
-            <div class="card-body">
-              <p class="card-text">{{ job.summary }}</p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark off sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-item nav-link" href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">Experience</a>
+        <a class="nav-item nav-link" href="{% static 'Ravi Kishore\'s Resume.pdf' %}">Education</a>
+        <a class="nav-item nav-link" href="{% url 'contact' %}">Skills</a>
+        <a class="nav-item nav-link" href="{% url 'contact' %}">Certifications</a>
+        <a class="nav-item nav-link" href="{% url 'contact' %}">Achievements</a>
       </div>
     </div>
-  </div>
+  </nav>
 
-</main>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h3>Experience</h3>
+          <br/>
+          <br/>
+        <div class="row">
+        	{% for job in jobs.all %}
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <a href="{{ job.image.url }}" target="blank"><img class="img-fluid" src="{{ job.image.url }}"/></img></a>
+              <div class="card-body">
+                <p class="card-text">{{ job.summary }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
 
 <footer class="text-muted">
   <div class="container text-center">
     <p>© Ravi Kishore {% now 'Y' %}</p>
   </div>
 </footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="/static/bootstrap.min.js" type="text/javascript"></script>
-</body>
 </html>
