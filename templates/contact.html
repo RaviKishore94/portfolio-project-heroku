@@ -1,133 +1,122 @@
-
 <!doctype html>
 <html lang="en">
+
   <head>
     {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.6">
+    <meta name="author" content="Ravi Kishore">
+    <meta name="generator" content="Ravi Kishore">
     <title>Ravi Kishore</title>
 
     <meta name="theme-color" content="#563d7c">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-	  <a class="navbar-brand" href="{% url 'home' %}">Ravi Kishore K P</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	    <div class="navbar-nav ml-auto">
-	      <a class="nav-item nav-link" href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">LinkedIn</a>
-	      <a class="nav-item nav-link" href="{% static 'Ravi Kishore\'s Resume.pdf' %}">Resume</a>
-        <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Me</a>
-	    </div>
-	  </div>
-	</nav>
+  	  <a class="navbar-brand" href="{% url 'home' %}">Ravi Kishore K P</a>
+  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  	    <span class="navbar-toggler-icon"></span>
+  	  </button>
+  	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  	    <div class="navbar-nav ml-auto">
+  	      <a class="nav-item nav-link" href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/" target="blank">LinkedIn</a>
+  	      <a class="nav-item nav-link" href="{% static 'Ravi Kishore\'s Resume.pdf' %}" target="blank">Resume</a>
+          <a class="nav-item nav-link active" href="{% url 'contact' %}">Contact Me</a>
+  	    </div>
+  	  </div>
+	  </nav>
 
-<main role="main">
+    <main role="main">
 
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h3>Get in Touch</h3>
-      <br/>
-        <table class="table">
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
-                    <i class="fas fa-phone-alt"></i>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
-                    <i class="fas fa-envelope"></i>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-  </section>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h3>Get in Touch</h3>
+        <br/>
+          <table class="table">
+            <thead></thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="social-icons">
+                    <a href="tel:+918015344891">
+                      <span class="fas fa-phone-alt"></span>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="social-icons">
+                    <a href="mailto:ravikishorespace@gmail.com">
+                      <span class="fas fa-envelope"></span>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ravi-kishore-k-p-26853510a/" target="blank">
+                      <span class="fab fa-linkedin-in"></span>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="social-icons">
+                    <a href="https://github.com/RaviKishore94" target="blank">
+                      <span class="fab fa-github"></span>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="social-icons">
+                    <a href="https://twitter.com/Ravi_kishore10" target="blank">
+                      <span class="fab fa-twitter"></span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
 
-<div class="row d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 text-center"> 
-  <div class="col-sm-5 bg-light mr-md-5 ml-md-5 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: #e9ecef !important;">
-    <div class="my-1 py-1">
-      <h4 class="display-5">Location of Residence</h4>
-      <b class="lead">Hosur</b>
+    <div class="location-card col-md-12">
+      <div class="row d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 text-center"> 
+        <div class="map col-sm-5 bg-light mr-md-5 ml-md-5 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-1 py-1">
+            <h4 class="display-5">Location of Residence</h4>
+            <b class="lead"><i class="fas fa-map-marked-alt"></i> Hosur</b>
+          </div>
+          <div class="iframe mx-auto">
+            <iframe width="100%" height="90%" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoyj3g8hwrjsRvslaJ8BrGtc&key=AIzaSyBPNbIWNMwVmkxHAbCisYx0c1JRtTACZ_s" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="map col-sm-5 bg-light mr-md-5 ml-md-5 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-1 py-1">
+            <h4 class="display-5">Location of Work</h4>
+            <b class="lead"><i class="fas fa-map-marked-alt"></i> Manyata Tech Park, Bangalore</b>
+          </div>
+          <div class="iframe mx-auto">
+            <iframe width="100%" height="90%" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6rqtWUXrjsRjZ5I8d4KCH4&key=AIzaSyBPNbIWNMwVmkxHAbCisYx0c1JRtTACZ_s" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mx-auto" style="width: 100%; height: 500px; border-radius: 0 0 0 0;">
-      <iframe width="100%" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoyj3g8hwrjsRvslaJ8BrGtc&key=AIzaSyBPNbIWNMwVmkxHAbCisYx0c1JRtTACZ_s" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="col-sm-5 bg-light mr-md-5 ml-md-5 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: #e9ecef !important;">
-    <div class="my-1 py-1">
-      <h4 class="display-5">Location of Work</h4>
-      <b class="lead">Manyata Tech Park, Bangalore</b>
-    </div>
-    <div class="mx-auto" style="width: 100%; height: 500px; border-radius: 0 0 0 0;">
-      <iframe width="100%" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6rqtWUXrjsRjZ5I8d4KCH4&key=AIzaSyBPNbIWNMwVmkxHAbCisYx0c1JRtTACZ_s" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
 
-<br/>
-<footer class="text-muted">
-  <div class="container text-center">
-    <p>© Ravi Kishore {% now 'Y' %}</p>
-  </div>
-</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/1bfa1b7c0f.js" crossorigin="anonymous"></script>
-</body>
+    <br/>
+
+  	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1bfa1b7c0f.js" crossorigin="anonymous"></script>
+  </body>
+
+  <footer class="text-muted">
+    <div class="container text-center">
+      <p>© Ravi Kishore {% now 'Y' %}</p>
+    </div>
+  </footer>
+
 </html>
