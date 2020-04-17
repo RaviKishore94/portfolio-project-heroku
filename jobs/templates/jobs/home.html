@@ -156,9 +156,9 @@
         <div class="row">
           {% for achievement in achievements %}
           <div class="col-md-6">
-            <p data-slideInBottom class="card-text"><h5><i class="fas fa-award"></i> {{ achievement.title }}</h5></p>
+            <p class="card-text"><h5><i class="fas fa-award"></i> {{ achievement.title }}</h5></p>
             <div class="card mb-4 shadow-sm">
-              <a data-slideInBottom data-toggle="modal" data-target="#myModal" data-whatever="{{ achievement.file.url }}"><img class="img-fluid" src="{{ achievement.file.url }}"/></img></a>
+              <a data-toggle="modal" data-target="#myModal" data-whatever="{{ achievement.file.url }}"><img class="img-fluid" src="{{ achievement.file.url }}"/></img></a>
               <div id="myModal" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -169,7 +169,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p data-slideInBottom class="card-text">{{ achievement.summary }}</p>
+                <p class="card-text">{{ achievement.summary }}</p>
               </div>
             </div>
           </div>
