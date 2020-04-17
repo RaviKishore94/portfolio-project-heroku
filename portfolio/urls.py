@@ -24,5 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', jobs.views.home, name='home'), 
     path('contact/', views.contact, name='contact'), 
-    #path('blog/', include('blog.urls')), #feasibility to include urls.py for the app itself
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
