@@ -1,0 +1,1 @@
+Static files will get collected while deployment
