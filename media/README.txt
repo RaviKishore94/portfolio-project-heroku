@@ -1,0 +1,1 @@
+Media files will be collected when inserted in DB
